@@ -1,0 +1,23 @@
+# Archivos locales del entorno (no versionar)
+.idea/
+*.iml
+.vscode/
+
+# Salidas de Maven y archivos compilados
+target/
+out/
+*.class
+dependency-reduced-pom.xml
+
+# Artefactos generados por Jazzer (corpus, inputs y ficheros de fallo)
+.cifuzz-corpus/
+**/*Inputs/
+crash-*
+
+# Registros y archivos temporales de herramientas de desarrollo
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store

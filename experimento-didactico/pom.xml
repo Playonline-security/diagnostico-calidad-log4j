@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Experimento didáctico — diagnóstico de calidad aplicado al caso Log4j.
+  Incluye el resolvedor V-A (defectuoso), el resolvedor corregido V-B,
+  las baterías JUnit de ambas variantes, los objetivos de fuzzing con
+  Jazzer y el oráculo independiente de referencia.
+  JDK ejecutor previsto: Oracle JDK 21.0.12.1 (selección por proyecto, sin
+  tocar JAVA_HOME global). Nivel de bytecode: release 11.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>edu.proyecto.calidad</groupId>
+  <artifactId>experimento-didactico</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Experimento didáctico — diagnóstico de calidad (Log4j)</name>
+  <description>
+    Componente Java didáctico con condición de riesgo inspirada en Log4Shell
+    (variantes defectuosa y corregida), con baterías JUnit, objetivos de
+    fuzzing con Jazzer y oráculo independiente de referencia.
+  </description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Nivel de bytecode del código didáctico (decidido en F-02). -->
+    <maven.compiler.release>11</maven.compiler.release>
+    <!-- Versiones fijadas en F-02 (documentación interna de desarrollo, no incluida en la publicación). -->
+    <version.maven-compiler-plugin>3.16.0</version.maven-compiler-plugin>
+    <version.maven-surefire-plugin>3.6.0</version.maven-surefire-plugin>
+    <version.junit-jupiter>5.10.5</version.junit-jupiter>
+    <!-- Fijada en F-04 (documentación interna de desarrollo, no incluida en la publicación). -->
+    <version.jazzer-junit>0.30.0</version.jazzer-junit>
+    <!-- Fijadas en F-05 (documentación interna de desarrollo, no incluida en la publicación). -->
+    <version.spotbugs-maven-plugin>4.8.3.1</version.spotbugs-maven-plugin>
+    <version.findsecbugs>1.14.0</version.findsecbugs>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${version.junit-jupiter}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${version.junit-jupiter}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>${version.junit-jupiter}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.code-intelligence</groupId>
+      <artifactId>jazzer-junit</artifactId>
+      <version>${version.jazzer-junit}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${version.maven-compiler-plugin}</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${version.maven-surefire-plugin}</version>
+      </plugin>
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>${version.spotbugs-maven-plugin}</version>
+        <configuration>
+          <plugins>
+            <plugin>
+              <groupId>com.h3xstream.findsecbugs</groupId>
+              <artifactId>findsecbugs-plugin</artifactId>
+              <version>${version.findsecbugs}</version>
+            </plugin>
+          </plugins>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
