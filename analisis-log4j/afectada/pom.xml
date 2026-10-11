@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EXP-REAL-A — Análisis SCA de log4j-core AFECTADA (2.14.1).
+  POM mínimo: solo declara el artefacto publicado y el plugin SCA.
+  No es una aplicación completa; el informe dirá "dependencia con CVE
+  conocido", nunca "explotable en contexto".
+  Clave NVD: solo referencia settings.xml (nvd-api-key), sin secretos.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>edu.proyecto.calidad</groupId>
+  <artifactId>analisis-log4j-afectada</artifactId>
+  <version>0.1.0</version>
+  <packaging>jar</packaging>
+
+  <name>Análisis SCA — Log4j afectada EXP-REAL-A (log4j-core 2.14.1)</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <version.log4j-core>2.14.1</version.log4j-core>
+    <!-- Fijada con evidencia SCA histórica (log4j-core 2.14.1). -->
+    <version.dependency-check-maven>13.0.0</version.dependency-check-maven>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${version.log4j-core}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>${version.dependency-check-maven}</version>
+        <configuration>
+          <!-- Referencia a settings.xml; la clave nunca está en el proyecto. -->
+          <nvdApiServerId>nvd-api-key</nvdApiServerId>
+          <formats>
+            <format>HTML</format>
+            <format>JSON</format>
+          </formats>
+          <!-- 11 = nunca falla por hallazgos; se registran como observaciones. -->
+          <failBuildOnCVSS>11</failBuildOnCVSS>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

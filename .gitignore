@@ -3,6 +3,9 @@
 *.iml
 .vscode/
 
+# Material interno de trabajo (no publicar, uso personal)
+docs/
+
 # Salidas de Maven y archivos compilados
 target/
 out/
@@ -21,3 +24,17 @@ crash-*
 *.swp
 *~
 .DS_Store
+
+# Vista publica por tecnica (copias sanitizadas con trazabilidad).
+# Solo se versiona evidencias/resultados/. Los originales en
+# evidencias/ejecuciones/ y los historicos F-05/F-06B permanecen locales
+# (sin excepciones que los habiliten).
+!evidencias/resultados/
+!evidencias/resultados/**/*.log
+!evidencias/resultados/**/*.md
+!evidencias/resultados/**/*.json
+!evidencias/resultados/**/*.xml
+!evidencias/resultados/**/*.html
+!evidencias/resultados/**/reportes/
+!evidencias/resultados/**/entradas-reproduccion/
+!evidencias/resultados/**/entradas-reproduccion/crash-*

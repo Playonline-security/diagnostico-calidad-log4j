@@ -1,0 +1,33 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< edu.proyecto.calidad:experimento-didactico >-------------
+[INFO] Building Experimento did�ctico � diagn�stico de calidad (Log4j) 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ experimento-didactico ---
+[INFO] skip non existing resourceDirectory <REPO>\experimento-didactico\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ experimento-didactico ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] >>> spotbugs:4.8.3.1:check (default-cli) > :spotbugs @ experimento-didactico >>>
+[INFO] 
+[INFO] --- spotbugs:4.8.3.1:spotbugs (spotbugs) @ experimento-didactico ---
+[INFO] Fork Value is true
+[INFO] Done SpotBugs Analysis....
+[INFO] 
+[INFO] <<< spotbugs:4.8.3.1:check (default-cli) < :spotbugs @ experimento-didactico <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.8.3.1:check (default-cli) @ experimento-didactico ---
+[INFO] BugInstance size is 0
+[INFO] Error size is 0
+[INFO] No errors/warnings found
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.976 s
+[INFO] Finished at: 2026-10-11T13:40:00-05:00
+[INFO] ------------------------------------------------------------------------
+

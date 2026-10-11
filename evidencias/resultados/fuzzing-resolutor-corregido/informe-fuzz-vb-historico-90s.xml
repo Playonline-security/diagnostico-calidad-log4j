@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="93.995" tests="7" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="jazzer.internal.basedir" value="&lt;REPO&gt;\experimento-didactico"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="&lt;REPO&gt;\experimento-didactico\target\test-classes;&lt;REPO&gt;\experimento-didactico\target\classes;&lt;MAVEN-REPO&gt;\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;&lt;MAVEN-REPO&gt;\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;&lt;MAVEN-REPO&gt;\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;&lt;MAVEN-REPO&gt;\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;&lt;MAVEN-REPO&gt;\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;&lt;MAVEN-REPO&gt;\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;&lt;MAVEN-REPO&gt;\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;&lt;MAVEN-REPO&gt;\com\code-intelligence\jazzer-junit\0.30.0\jazzer-junit-0.30.0.jar;&lt;MAVEN-REPO&gt;\com\code-intelligence\jazzer-api\0.30.0\jazzer-api-0.30.0.jar;&lt;MAVEN-REPO&gt;\com\code-intelligence\jazzer\0.30.0\jazzer-0.30.0.jar;&lt;MAVEN-REPO&gt;\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="&lt;JDK-21&gt;\bin"/>
+    <property name="sun.java.command" value="&lt;TMP&gt;\surefire9112900502760386755\surefirebooter-20261009010123626_3.jar &lt;TMP&gt;\surefire9112900502760386755 2026-10-09T01-01-23_456-jvmRun1 surefire-20261009010123626_1tmp surefire_0-20261009010123626_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="ResolutorPlantillasCorregidoFuzzTest"/>
+    <property name="surefire.test.class.path" value="&lt;REPO&gt;\experimento-didactico\target\test-classes;&lt;REPO&gt;\experimento-didactico\target\classes;&lt;MAVEN-REPO&gt;\org\junit\jupiter\junit-jupiter-api\5.10.5\junit-jupiter-api-5.10.5.jar;&lt;MAVEN-REPO&gt;\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;&lt;MAVEN-REPO&gt;\org\junit\platform\junit-platform-commons\1.10.5\junit-platform-commons-1.10.5.jar;&lt;MAVEN-REPO&gt;\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;&lt;MAVEN-REPO&gt;\org\junit\jupiter\junit-jupiter-engine\5.10.5\junit-jupiter-engine-5.10.5.jar;&lt;MAVEN-REPO&gt;\org\junit\platform\junit-platform-engine\1.10.5\junit-platform-engine-1.10.5.jar;&lt;MAVEN-REPO&gt;\org\junit\jupiter\junit-jupiter-params\5.10.5\junit-jupiter-params-5.10.5.jar;&lt;MAVEN-REPO&gt;\com\code-intelligence\jazzer-junit\0.30.0\jazzer-junit-0.30.0.jar;&lt;MAVEN-REPO&gt;\com\code-intelligence\jazzer-api\0.30.0\jazzer-api-0.30.0.jar;&lt;MAVEN-REPO&gt;\com\code-intelligence\jazzer\0.30.0\jazzer-0.30.0.jar;&lt;MAVEN-REPO&gt;\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="&lt;USER-HOME&gt;"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="&lt;JDK-21&gt;"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="&lt;REPO&gt;\experimento-didactico"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.attach.allowAttachSelf" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="&lt;TMP&gt;\surefire9112900502760386755\surefirebooter-20261009010123626_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.12.1+1-LTS-4"/>
+    <property name="user.name" value="&lt;USUARIO&gt;"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="&lt;MAVEN-REPO&gt;"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="&lt;TMP&gt;\"/>
+    <property name="java.version" value="21.0.12.1"/>
+    <property name="user.dir" value="&lt;REPO&gt;\experimento-didactico"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="&lt;JDK-21&gt;\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe;&lt;USER-HOME&gt;\.jdks\openjdk-26.0.2.1\bin;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;&lt;USER-HOME&gt;\AppData\Local\Microsoft\WindowsApps;&lt;USER-HOME&gt;\AppData\Local\Programs\Microsoft VS Code\bin;&lt;USER-HOME&gt;\AppData\Roaming\npm;C:\Program Files (x86)\Nmap;&lt;USER-HOME&gt;\AppData\Local\Programs\apache-maven-3.9.16\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.12.1+1-LTS-4"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="argLine" value="-Djdk.attach.allowAttachSelf=true -XX:+EnableDynamicAgentLoading"/>
+  </properties>
+  <testcase name="datoNoSeReinterpretaEnCorregido(String)[1]" classname="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="2.75">
+    <system-err><![CDATA[INFO: Loaded 741 hooks from com.code_intelligence.jazzer.runtime.TraceCmpHooks
+INFO: Loaded 5 hooks from com.code_intelligence.jazzer.runtime.TraceDivHooks
+INFO: Loaded 2 hooks from com.code_intelligence.jazzer.runtime.TraceIndirHooks
+INFO: Loaded 4 hooks from com.code_intelligence.jazzer.runtime.NativeLibHooks
+INFO: Loaded 5 hooks from com.code_intelligence.jazzer.runtime.JazzerApiHooks
+INFO: Loaded 1 hooks from com.code_intelligence.jazzer.sanitizers.BigDecimal
+INFO: Loaded 2 hooks from com.code_intelligence.jazzer.sanitizers.ClojureLangHooks
+INFO: Loaded 5 hooks from com.code_intelligence.jazzer.sanitizers.Deserialization
+INFO: Loaded 24 hooks from com.code_intelligence.jazzer.sanitizers.ExpressionLanguageInjection
+INFO: Loaded 31 hooks from com.code_intelligence.jazzer.sanitizers.FilePathTraversal
+INFO: Loaded 70 hooks from com.code_intelligence.jazzer.sanitizers.LdapInjection
+INFO: Loaded 46 hooks from com.code_intelligence.jazzer.sanitizers.NamingContextLookup
+INFO: Loaded 1 hooks from com.code_intelligence.jazzer.sanitizers.OsCommandInjection
+INFO: Loaded 48 hooks from com.code_intelligence.jazzer.sanitizers.ReflectiveCall
+INFO: Loaded 8 hooks from com.code_intelligence.jazzer.sanitizers.RegexInjection
+INFO: Loaded 16 hooks from com.code_intelligence.jazzer.sanitizers.RegexRoadblocks
+INFO: Loaded 12 hooks from com.code_intelligence.jazzer.sanitizers.ScriptEngineInjection
+INFO: Loaded 3 hooks from com.code_intelligence.jazzer.sanitizers.ServerSideRequestForgery
+INFO: Loaded 19 hooks from com.code_intelligence.jazzer.sanitizers.SqlInjection
+INFO: Loaded 1 hooks from com.code_intelligence.jazzer.sanitizers.TemplateInjection
+INFO: Loaded 63 hooks from com.code_intelligence.jazzer.sanitizers.UnsafeSanitizer
+INFO: Loaded 6 hooks from com.code_intelligence.jazzer.sanitizers.XPathInjection
+INFO: Loaded 20 hooks from com.code_intelligence.jazzer.sanitizers.XmlParserSsrfGuidance
+INFO: Instrumented edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregido (took 86 ms, size +45%)
+INFO: Instrumented edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest (took 8 ms, size +8%)
+INFO: Instrumented edu.proyecto.calidad.plantillas.OraculoNoReinterpretacion (took 19 ms, size +62%)
+]]></system-err>
+  </testcase>
+  <testcase name="datoNoSeReinterpretaEnCorregido(String)[2]" classname="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="0.015"/>
+  <testcase name="datoNoSeReinterpretaEnCorregido(String)[3]" classname="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="0.007"/>
+  <testcase name="datoNoSeReinterpretaEnCorregido(String)[4]" classname="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="0.009"/>
+  <testcase name="datoNoSeReinterpretaEnCorregido(String)[5]" classname="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="0.005"/>
+  <testcase name="datoNoSeReinterpretaEnCorregido(String)[6]" classname="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="0.005"/>
+  <testcase name="datoNoSeReinterpretaEnCorregido(String)[7]" classname="edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest" time="91.091">
+    <system-err><![CDATA[INFO: Using mutator: Arguments[Nullable<String>]
+INFO: using inputs from: \\?\&lt;REPO&gt;\experimento-didactico\.cifuzz-corpus\edu.proyecto.calidad.plantillas.ResolutorPlantillasCorregidoFuzzTest\datoNoSeReinterpretaEnCorregido
+INFO: using inputs from: &lt;TMP&gt;\jazzer-java-seeds4493125207397275509
+]]></system-err>
+  </testcase>
+</testsuite>

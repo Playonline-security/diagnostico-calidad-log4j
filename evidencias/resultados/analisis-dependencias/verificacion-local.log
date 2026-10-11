@@ -1,0 +1,12 @@
+
+[DIAG] OK analisis-log4j/afectada/target/dependency-check-report.html (542333 bytes)
+[DIAG] OK analisis-log4j/afectada/target/dependency-check-report.json (274099 bytes)
+[DIAG] OK analisis-log4j/corregida/target/dependency-check-report.html (206258 bytes)
+[DIAG] OK analisis-log4j/corregida/target/dependency-check-report.json (87716 bytes)
+[DIAG] analisis-log4j/afectada/target/dependency-check-report.json: deps=2; por-dep=[log4j-api-2.14.1.jar: 3; log4j-core-2.14.1.jar: 9]; CVEunicos=9 [CVE-2021-44228, CVE-2021-44832, CVE-2021-45046, CVE-2021-45105, CVE-2025-68161, CVE-2026-34477, CVE-2026-34479, CVE-2026-34480, CVE-2026-49844]
+[DIAG] analisis-log4j/corregida/target/dependency-check-report.json: deps=2; por-dep=[log4j-api-2.17.1.jar: 3; log4j-core-2.17.1.jar: 5]; CVEunicos=5 [CVE-2025-68161, CVE-2026-34477, CVE-2026-34479, CVE-2026-34480, CVE-2026-49844]
+[DIAG] analisis-log4j/afectada/target/dependency-check-report.html: HTML Vulnerabilities Found</i>:&nbsp;12
+[DIAG] analisis-log4j/corregida/target/dependency-check-report.html: HTML Vulnerabilities Found</i>:&nbsp;8
+[DIAG] ADVERTENCIA: Asociacion CVE != explotabilidad en una aplicacion concreta (POMs minimos sin appenders/config).
+[DIAG] ADVERTENCIA: 2.17.1 fue comparador historico frente a Log4Shell; con NVD a 2026-10-09 mantiene 5 CVE posteriores: NO presentarla como segura.
+[DIAG] ADVERTENCIA: Informes de 2026-10-09; no se les atribuye fecha nueva. Ver resultados-auditoria/auditoria_cve_dependency_check.md.
